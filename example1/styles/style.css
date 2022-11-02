@@ -1,0 +1,32 @@
+/* Universal styling */
+*,  /* asterisk selects all elements*/
+*::after, /* after is a pseudo selector that selects all elements after the actual element*/
+*::before { /* before is a pseudo selector that selects all elements before the actual element*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*so that child element does not overlap with parent*/
+}
+
+/* main difference between pseudo selector and class is one has one colon and the other has two */
+ul li:nth-child(1) { /*this is the pseudo class*/
+    background-color: aqua;
+}
+/* p::after {
+    content: '!';
+}
+p::before {
+    content: '1';
+} */
+
+p::first-letter {
+    font-size: 3rem;
+    background-color: aquamarine;
+}
+
+.box {
+    width: 400px;
+    background-color: aqua;
+    margin: auto;
+    border: 2rem solid blue; /*size(default font size is 16px,*/ 
+    outline: 5px solid green;
+}
